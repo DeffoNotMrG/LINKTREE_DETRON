@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F9F9F8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    border-left: 5px solid #FF8200;
+    margin: 10px 0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.link-block {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    color: #5F5F5F;
+    text-decoration: none;
+    border-radius: 5px;
+    border-left: 5px solid #FF8200;
+}
+
+.link-block:hover {
+    background-color: #5F5F5F;
+    color: #F9F9F8;
+}
+
+.footer {
+    margin-top: 20px;
+    color: #5F5F5F;
+    font-size: 0.9em;
+}
+
+.jobs-listing {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
