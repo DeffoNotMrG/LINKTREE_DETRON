@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link in Bio</title>
@@ -22,6 +24,32 @@
             © Copyright Detron 2023
         </div>
     </div>
-    <script src="counter.js"></script>
+    <script>
+    // GSAP Animations
+    gsap.from(".header", {duration: 1, opacity: 0, y: -50, ease: "power2.out"});
+    gsap.from(".logo", {duration: 1, opacity: 0, y: -50, ease: "power2.out"});
+    gsap.from(".link-block", {duration: 2, opacity: 0, y: 50, ease: "power2.out", stagger: 0.3, delay: 1});
+
+    // Counter Animation (Delay added to ensure it starts after or during GSAP animations)
+    setTimeout(function() {
+        let counter = document.getElementById('jobCounter');
+        let currentCount = 0;
+        let targetCount = 34;
+        let duration = 2000;
+        let increment = targetCount / (duration / 50);
+
+        let countJobs = setInterval(() => {
+            currentCount += increment;
+            if (currentCount >= targetCount) {
+                clearInterval(countJobs);
+                counter.textContent = targetCount;
+            } else {
+                counter.textContent = Math.floor(currentCount);
+            }
+        }, 50);
+    }, 1500);  // Starts the counter animation 1.5 seconds after the page loads
+</script>
+
+
 </body>
 </html>
