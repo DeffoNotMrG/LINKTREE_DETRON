@@ -59,3 +59,11 @@ body, html {
     justify-content: space-between;
     padding: 15px 30px;
 }
+.AD {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    border: 1px solid transparent;
+}
+
+

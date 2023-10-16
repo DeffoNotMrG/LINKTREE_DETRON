@@ -20,6 +20,7 @@
         <a href="https://www.detron.nl/werken-bij-detron/vacatures?hsCtaTracking=0446f2f5-4b71-48c5-9c9b-6a97c4e63be3%7C42989bc9-bb3f-41f2-bea6-98e05cd8ef96" class="link-block">
         <span id="jobCounter">0</span> openstaande vacatures gevonden
         </a>
+        <iframe class="AD" src="https://deffonotmrg.github.io/Banner-300x600_DE/" width="300" height="250"></iframe>
         <div class="footer">
             © Copyright Detron 2023
         </div>
@@ -29,6 +30,7 @@
     gsap.from(".header", {duration: 1, opacity: 0, y: -50, ease: "power2.out"});
     gsap.from(".logo", {duration: 1, opacity: 0, y: -50, ease: "power2.out"});
     gsap.from(".link-block", {duration: 2, opacity: 0, y: 50, ease: "power2.out", stagger: 0.3, delay: 1});
+    gsap.from(".AD", {duration: 5, opacity: 0, y: 50, ease: "power2.out", stagger: 0.3, delay: 1});
 
     // Counter Animation (Delay added to ensure it starts after or during GSAP animations)
     setTimeout(function() {

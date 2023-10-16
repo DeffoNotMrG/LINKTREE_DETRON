@@ -13,3 +13,4 @@ let countJobs = setInterval(() => {
         counter.textContent = Math.floor(currentCount);
     }
 }, 50);
+
